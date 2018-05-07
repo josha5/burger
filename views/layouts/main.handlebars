@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Burgers</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1>Eat a burger or add one...</h1>
+        <p><strong>and then you eat it.</strong></p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="http://img.freeclipartsy.com/clip_art/hamburger-hhym22a.png" class="mx-auto d-block">
+            </div>
+        </div>
+
+        {{{ body }}}
+        <form action="burger/create" method="POST">
+            <div class="form-group">
+                <label for="">Add a new burger of your choice!</label>
+                <input type="text" class="form-control" id="" placeholder="Input field">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+	
+</body>
+</html>

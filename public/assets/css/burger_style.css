@@ -1,0 +1,18 @@
+body {
+    background-color: #ffc61a;
+    font-family: comic sans ms;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px !important;
+    background-color: #ffffcc;
+}
