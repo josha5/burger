@@ -4,8 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Burgers</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../public/assets/css/burger_style.css">
-	<script src="https://code.jquery.com/jquery.js"></script>
+    <link rel="stylesheet" href="../../assets/css/burger_style.css">
 </head>
 <body>
     <div class="jumbotron">
@@ -18,17 +17,17 @@
                 <img src="http://img.freeclipartsy.com/clip_art/hamburger-hhym22a.png" class="mx-auto d-block">
             </div>
         </div>
-        <form action="burger/create" method="POST">
+        <form action="/burger/create" method="POST">
             <div class="form-group">
                 <label for="">Add a new burger of your choice!</label>
                 <input type="text" class="form-control" id="newBurger" placeholder="Enter burger name">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-        
+
         {{{ body }}}
         
     </div>
-	
+	<script src="https://code.jquery.com/jquery.js"></script>
 </body>
 </html>

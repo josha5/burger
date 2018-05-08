@@ -11,11 +11,24 @@ router.get('/', function (req, res) {
 });
 
 router.get('/index', function (req, res) {
-    burger.all(function(data) {
+    burger.All(function(data) {
         var hbsObject = { burgers: data };
         res.render('index', hbsObject);
 
         console.log(hbsObject);
+    });
+});
+
+
+router.post('/burger/create', function (req, res) {
+    burger.insert(req.body.burger_name, function() {
+      res.redirect('/index');
+    });
+  });
+
+router.post('/burger/eat/:id', function (req, res) {
+    burger.update(req.params.id, function() {
+      res.redirect('/index');
     });
 });
 
