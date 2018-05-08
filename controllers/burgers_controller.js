@@ -4,17 +4,19 @@ const express = require("express");
 const burger = require("../models/burger.js");
 
 
-const router = express.router();
+const router = express.Router();
 
-router.get("/", function(req, res) {
+router.get('/', function (req, res) {
+    res.redirect('/index');
+});
+
+router.get('/index', function (req, res) {
     burger.all(function(data) {
-        let hbsObject = {
-            burgers: data
-        };
+        var hbsObject = { burgers: data };
+        res.render('index', hbsObject);
 
         console.log(hbsObject);
     });
 });
-
 
 module.exports = router;
