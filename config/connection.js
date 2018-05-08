@@ -10,7 +10,8 @@ const connection = mysql.createConnection({
 
   // Your password
   password: "password",
-  database: "burgers_db"
+  database: "burgers_db",
+  socketPath: "/var/run/mysqld/mysqld.sock"
 });
 
 connection.connect(function(err) {
