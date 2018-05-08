@@ -15,12 +15,13 @@ router.get('/index', function (req, res) {
         var hbsObject = { burgers: data };
         res.render('index', hbsObject);
 
-        console.log(hbsObject);
+        // console.log(hbsObject);
     });
 });
 
 
 router.post('/burger/create', function (req, res) {
+    console.log("This is the body: " + JSON.stringify(req.body));
     burger.insert(req.body.burger_name, function() {
       res.redirect('/index');
     });
