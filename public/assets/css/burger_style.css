@@ -14,5 +14,8 @@ img {
     justify-content: center;
     align-items: center;
     height: 150px !important;
-    background-color: #ffffcc;
+    width: 80%;
+    background-color:  #ffffe6;
+    border: 0.5px solid black;
+    box-shadow: 0 6px;
 }
